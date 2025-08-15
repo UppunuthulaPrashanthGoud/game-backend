@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('layouts.public')
 @section('content')
 <div class="container py-5">
   <div class="card shadow-sm">
