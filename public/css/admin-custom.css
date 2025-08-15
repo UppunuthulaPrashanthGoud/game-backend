@@ -1,0 +1,69 @@
+/* Custom Admin Panel Styles */
+body {
+    background: #f8fafc;
+    color: #222;
+}
+.sidebar {
+    background: linear-gradient(180deg, #212529 80%, #343a40 100%);
+    box-shadow: 2px 0 8px rgba(44,62,80,0.04);
+}
+.sidebar .navbar-brand {
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    color: #fff;
+}
+.sidebar .nav-link {
+    font-size: 1.08rem;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+.sidebar .nav-link.active, .sidebar .nav-link:hover {
+    background: #495057;
+    color: #fff;
+}
+.sidebar .logout-btn .btn {
+    border-radius: 6px;
+    font-weight: 500;
+}
+.card {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.06);
+    border: none;
+}
+.card-title {
+    font-weight: 600;
+    color: #212529;
+}
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+.table th {
+    background: #f1f3f6;
+    font-weight: 600;
+}
+.btn-primary {
+    background: linear-gradient(90deg, #4f8cff 60%, #6f6fff 100%);
+    border: none;
+    font-weight: 500;
+}
+.btn-outline-secondary, .btn-outline-danger {
+    border-radius: 6px;
+}
+.alert {
+    border-radius: 8px;
+}
+.form-control, .form-select {
+    border-radius: 6px;
+    box-shadow: none;
+}
+input:focus, select:focus, textarea:focus {
+    box-shadow: 0 0 0 2px #4f8cff33;
+    border-color: #4f8cff;
+}
+@media (max-width: 991px) {
+    .sidebar { position: static; width: 100%; min-height: auto; flex-direction: row; }
+    main.container { margin-left: 0; }
+}
+
