@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Api\GameApiController;
+use App\Http\Controllers\Api\CategoryApiController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\GameController;
 use App\Http\Controllers\Admin\AppSettingController;
@@ -15,6 +16,8 @@ Route::get('/', function () {
 
 // Public API endpoint for games list
 Route::get('/api/games', [GameApiController::class, 'index']);
+// Public API endpoint for categories list
+Route::get('/api/categories', [CategoryApiController::class, 'index']);
 
 // Public legal/info pages
 Route::view('/terms', 'public.terms');
